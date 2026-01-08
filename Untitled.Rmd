@@ -28,27 +28,14 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-ChatGPTが作成したLinear Mixed Model (LMM) の解説を元に、**R (RStudio) や Google Colab でそのまま実行・学習できる「R Markdown形式」のコンテンツ**を作成しました。
 
-元の内容をベースにしつつ、以下の**3つの強化**を行っています。
+
 
 1.  **実行可能なダミーデータの追加**: コードをただ読むだけでなく、実際に動かして数値を確認できるようにしました。
 2.  **図解（プロット）の追加**: 固定効果とランダム効果の違い、BLUE（予測値）の意味を視覚的に理解するためのグラフ描画コードを追加しました。
 3.  **理論的補足**: 統計用語（BLUE vs BLUP）の正確な区別や、数式的な背景を少し補足して理解を深めるようにしました。
 
 -----
-
-### Google Colab または RStudio での使い方
-
-以下のコードブロックの中身をコピーして、環境に合わせて保存・実行してください。
-
-  * **RStudioの場合**: `LMM_Tutorial.Rmd` という名前で保存し、「Knit」ボタンを押すと綺麗なレポートが出力されます。
-  * **Google Colabの場合**: ノートブックの設定で「ランタイムのタイプ」を **R** に変更してから、コードセルに部分ごとに貼り付けて実行してください。
-
------
-
-### 📘 R Markdown コード (ここからコピー)
-
 ````markdown
 ---
 title: "Linear Mixed Models (LMM) 実践ガイド"

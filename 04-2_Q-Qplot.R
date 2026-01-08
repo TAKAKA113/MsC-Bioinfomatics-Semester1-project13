@@ -41,8 +41,14 @@ loc %>% select(genotype, site, rep, tkw) %>%
 #4 R1585        NJ_OS 3       58.4
 
 
+こープロット
+p-value matrix
+correlation
+ggplotの中にequetionを入れる　ggpubrパッケージ
+pivotでlongformatにするestimte(y)とyear_of_realeace(x)
+statistically stationary or no stationary
 
-
+*how genetic traits change over timesこれがこのp路ジェクトのきも
 
 
 
