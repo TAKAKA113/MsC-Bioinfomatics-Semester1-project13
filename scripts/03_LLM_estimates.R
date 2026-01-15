@@ -54,11 +54,11 @@ random_spno <- ranef(model_spno)$genotype %>%
 ### 3. BLUE（推定値）
 fixed_mean_spno <- fixed_spno$Fixed_Estimate[ fixed_spno$Term == "(Intercept)" ]
 
-blue_spno <- data.frame(
-  Genotype = blup_spno$Genotype,
-  BLUE_SPno = fixed_mean_spno + blup_spno$BLUP
-)
 
+blue_spno <- data.frame(
+  Genotype  = random_spno$Genotype,
+  BLUE_SPno = fixed_mean_spno + random_spno$Random_Effect
+)
 ### 確認
 head(fixed_spno)
 head(random_spno)
@@ -94,6 +94,7 @@ blue_spl <- data.frame(
   Genotype  = random_spl$Genotype,
   BLUE_SPL  = fixed_mean_spl + random_spl$Random_Effect
 )
+
 
 #4.確認
 head(fixed_spl)
